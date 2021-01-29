@@ -1,122 +1,221 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <title>UX/UI Homework 20</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="style.css" type="text/css" rel="stylesheet">
-</head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+   <!--Link to CSS Sheet--> 
+   <link href="style.css" type="text/css" rel="stylesheet">
+</head>
 <body>
 
-    <!-- MAIN NAV SECTION -->
-    <nav>
-        <div class="block_element">
-            <ul>
-                <img src="images/logo.png" alt="Chandy's Logo" width="40" height="60" ALIGN="left">
-                <li class="inline-block">Work</li>
-                <li class="inline-block">About</li>
-                <li class="inline-block">Resume</li>
-            </ul>
+    <!-- HORIZONTAL NAV SECTION -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Chandy's Logo" width="40" height="60" ALIGN="left"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="#">WORK <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">ABOUT</a>
+            <a class="nav-item nav-link" href="#">RESUME</a>
+          </div>
         </div>
+     
     </nav>
+
+    <!-- HERO SECTION & VERTICAL NAV -->
+    <div class="container">
+        <div class="row">
+          <div class="col-1.5">
+            <!--VERTICAL NAV -->
+                <nav class="nav flex-column">
+                    <a class="nav-link active" href="#">OVERVIEW</a>
+                    <a class="nav-link" href="#">DISCOVER</a>
+                    <a class="nav-link" href="#">DEFINE</a>
+                    <a class="nav-link" href="#">DEVELOP</a>
+                    <a class="nav-link" href="#">DELIVER</a>
+                </nav>
+          </div>
+          <div class="col-4">
+            <h2>DIY Pro</h2>
+            <p>Designed for the homeowner to understand the entire scope of a home renovation project before beginning to avoid overspending and endless hours in the home improvement store.</p>
+            <h6>[Ideation] [Interviews] [User Stories] [Journey Maps] [Sketching] [Information Architechture] [Workflows] [Wireframing] [Visual Design]</h6>
+        </div>
+          <div class="col-6">
+            <img src="images/Header Pic.png" alt="DIY Pro Header pic"width="470" height="350" ALIGN="right"></a>
+          </div>
+        </div>
+    </div>
+ <!-- MAIN CONTENT SECTION -->
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                <h1>OVERVIEW</h1>
+               </div>
+              <div class="col-4">
+                
+              </div>
+              <div class="row">
+                <div class="col-7">
+                    <img src="images/OverviewPic.png" alt="DIY Pro prodcut pic"width="600" height="450" ALIGN="left"></a>
+                </div>
+                <div class="col-5">
+                    <p>As a team, we were challenged to create a mobile application that focused on meeting an unmet need for consumers. 
+                    </p>    
+                    <p>One of the most common problems for homeowners are endless home improvement projects. The decision whether or not to hire a contractor is also common. Along with endless trips to the home improvement store resulting often being over budget. 
+                    </p>    
+                    <p>DIY’ers need a way to quickly estimate the scope of common home improvement projects because they lack the experience and often end up frustrated with costly and unfinished projects.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                <h1>DISCOVER</h1>
+               </div>
+              <div class="col-4">           
+              </div>
+              
+              <div class="row">
+                <div class="col-4">
+                <p>As we dove into our primary research, we wanted to determine why homeowners sought to hire a contractor and what factors helped then determine when they should start a new DIY project within their homes.
+                </p>        
+                <p>We quickly realized that the reasoning behind starting a DIY project was not to fix non-working items, but for personal satisfaction.
+                </p>    
+                <p>Our DIY’ers were young and frugal. They were tech-savvy and preferred to learn a new skill in an online tutorial. Our homeowners could easily determine cost/benefit analysis and realized that they easily save by completing the home improvement project themselves.
+                </p>    
+                <p>Many projects took more time and money than expected, but our DIY’ers are determined to do it themselves! We developed our persona, Robert Paulson below based on our research findings.
+                </p>
+                </div>
+                <div class="col-7">
+                    <img src="images/DicoverPic.png" alt="chart bubble pic"width="700" height="500" ALIGN="left"></a>
+                </div>
+            </div>
+        </div>
+
+        <img src="images/SSRobertPaulson.png" alt="persona pic"width="1100" height="800" ALIGN="left"></a>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-8">
+                    <h1>DEFINE</h1>
+                   </div>
+                  <div class="col-4">           
+                  </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4">
+                <p>Our key user insight was learning that our homeowners did not want to hire a contractor—they felt satisfaction in completing the project on their own. At this point, we changed the objective of our application from “should I hire a contractor” to providing the DIY’er with all of the information needed to start a DIY project. </p>
+              </div>
+              <div class="col-4">
+                <p>For ideation, we completed a competitor analysis, created an affinity diagram based on user insights, and created a feature prioritization matrix. Key findings for DIY’ers included: they need a specific material list before entering a home improvement store, they like to share their finished projects with friends, and they would like to consider the entire scope of the project before beginning.</p>
+              </div>
+              <div class="col-4">
+                <p>As you can see on the feature prioritization matrix below, we decided to include the features that both had the greatest impact and the lowest complexity in our MVP, such as a cost calculator and a project-type filter. </p>
+              </div>
+            </div>
+          </div>
+          <img src="images/ImpactvsComplexityPic.png" alt="persona pic" width="1100" height="800" ALIGN="left"></a>
+         
+          <a href="index.html">
+            <img class="image ProblemStatement" src="images/ProblemStatementPic.png" alt="problem statement pic"width="1100" height="600" ALIGN="left">
+            </a>
+          
+          
+          <div class="container">
+            <div class="row">
+                    <div class="col-8">
+                    <h1>DEVELOP</h1>
+                   </div>
+                  <div class="col-4">           
+                  </div>
+            </div>
+
+            <div class="row">
+              <div class="col-3">
+                <p>Based on the findings in the definition stage, we designed basic wireframes with the features that our independent and frugal DIY’er would use while planning a home improvement project including  trending home improvement projects, a share screen so you can take pictures of your finished project and share on any social media app, and filters to make selecting your next DIY project enjoyable.</p> 
+                <p>We also created a user flow to define how our DIY’er would interact with the application and use each tool. We deducted that our DIY’er would spend time searching popular home repair projects before deciding to watch a tutorial or create a material list.</p>
+                <p>Our initial usability tests indicated that users found the material list confusing and difficult to use so we restructured the user flow created a separate screen for this function.</p>
+              </div>
+              <div class="col-3">
+                <img src="images/Explore – 1.png" alt="explore screen image" width="250" height="auto" ALIGN="left"></a>
+            </div>
+              <div class="col-3">
+                <img src="images/Explore_search – 2.png" alt="explore 2 screen image" width="250" height="auto" ALIGN="left"></a>
+              </div>
+              <div class="col-3">
+                <img src="images/Search_Filter – 1.png" alt="filter screen image" width="250" height="auto" ALIGN="left"></a>
+              </div>
+            </div>
+          </div>
+          <img src="images/blackflowchartpic@2x.png" alt="flow chart"width="1100" height="auto" ALIGN="left"></a>
+
+          <div class="container">
+            <div class="row">
+                <div class="col-8">
+                <h1>DELIVER</h1>
+               </div>
+              <div class="col-4">           
+              </div>
+              <div class="row">
+               </div>
+                <div class="col-7">
+                    <img src="images/DIYProScreenshotImg.png" alt="home image"width="300" height="auto" ALIGN="right"></a>
+                </div>
+                <div class="col-4">
+                    <p>Based on additional user testing, we adjusted split the DIY review page from the social media sharing page. We also took our main project pages and linked them to allow participants to access the learning area from one central page. The learning (explore) page was also streamlines after testing showed that the products were not developed fully enough for the users to understand.
+                    </p>        
+                    <p>After additional testing, we realized our product needed more iterations and further testing. As with all product design, continuous improvement is always needed. We learned that testing early and often is imperative to developing a functional and usable application. 
+                    </p>    
+            </div>
+        </div>
+     
+
+<!-- FOOTER SECTION -->
+   
+        <div class="connect">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="darkBack" ALIGN="center">Let's Connect!</h3>
+             </div>
+          </div>
+          <div class="row">
+            <div class="col-5">
+             </div>
+            <div class="col-1">
+            <img src="images/noun_dribble_785663.png"alt="icon image"width="20" height="auto"></a>
+           </div>
+           <div class="col-1">
+            <img src="images/Icon awesome-linkedin-in.png"alt="linked in image"width="20" height="auto"></a>
+           </div>
+           <div class="col-1">
+            <img src="images/Icon material-email.png"alt="email image"width="18" height="auto"></a>
+           </div>
+           <div class="col-5">
+          </div>
+         </div>
+         <div class="row">
+          <div class="col-12">
+            <h4 class="darkBack" ALIGN="center">&#169; 2021 Chandy Olesen</h4>
+           </div>
+        </div>
+                  
+        </div>
     
-    <!-- HERO CONTENT SECTION -->
-    <section class="heroImg">
-        <div class="content">
-            <img src="images/selfie2.png" alt="Chandy's Pic" width="250" height="300" ALIGN="right">
-            <h1>Hi, I'm Chandy and I'm glad you are here!</h1>
-            <h2>My focus is results-oriented design</h2>
-            <p>
-                I have spent the past 10+ years working at corporations and helping them increase
-                revenue through the use of effective marketing and advertising. I am passionate about
-                both analytics and creativity and I’ve sought to excel at both during my career.
-            </p>
-            <p>
-                Combining my past experience of focusing on results-oriented marketing and key metrics,
-                I can design UX solutions that engage the user while growing your business. I am able to
-                focus on how the overall design will focus on meeting key strategic business objectives.
-            </p>
-            <p>
-                Good design takes time and requires continuous improvement to be engaging and effective,
-                but great design requires deeply understanding your customer and being able to understand
-                what motivates them to use your product. By building a base of loyal customers, your
-                organization will experience an increase in sales and profitability. Investing in the User
-                Experience is one of the best business decisions you can make!
-            </p>
-            <button>Download Resume</button>
-        </div>
-    </section>
-
-    <!--My UX Skills section coded using CSS flex-->
-    <section class=mySkills>
-        <div class="content">
-            <h1>My UX Skills</h1>
-            <div class="flexContainer">
-                <div class="child">
-                    <h3>UX Skills</h3>
-                    <p>Research, problem
-                            definition, user needs
-                            prototypes, solutions
-                            testing, iterating,
-                            implementing</p>
-                </div>
-                <div class="child">
-                    <h3>Marketing Skills</h3>
-                    <p>SEM, digital marketing, advertising, PPC,
-                            tracking KPI’s, branding
-                            & positioning, project
-                            management</p>
-                </div>
-                <div class="child">
-                        <h3>Business Skills</h3>
-                        <p>Profitability analysis,
-                            program management,
-                            business needs,
-                            forecasting & budgeting,
-                            understanding new
-                            technology</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--My Work Section Constructed using CSS Grid-->
-    <section class=myWork>
-        <div class="content">
-            <h1>My Work</h1>
-        </div>
-        <div id="workGrid">
-            <div>
-                <img src="images/Elevate1Life.png" alt="Elevate 1 Life" width="400" height="250" ALIGN="center">
-                <h4>Elevate 1 Life, Non-profit Redesign</h4>
-            </div>
-            <div>
-                <img src="images/FTCImage.png" alt="FTC Image" width="400" height="261" ALIGN="center">
-                <h4>FTC.gov, Governmental Redesign</h4>
-            </div>
-            <div>
-                <img src="images/MyCustomVacayImage.png" alt="My Custom Vacay Image" width="400" height="261"
-                    ALIGN="center">
-                <h4>My Custom Vacation, Mobile App</h4>
-            </div>
-            <div>
-                <img src="images/DIYImage.png" alt="DIY Image" width="400" height="250" ALIGN="center">
-                <h4>Do-It! Professional, Mobile App</h4>
-            </div>
-        </div>
-        <h5>View all projects.</h5>
-    </section>
-        
-
-    <!-- FOOTER SECTION -->
-    <footer>
-        <ul>
-            <li class="inline-block">Work</li>
-            <li class="inline-block">About</li>
-            <li class="inline-block">Resume</li>
-        </ul>
-
-    </footer>
 </body>
+<!--jQuery and Bootstrap closing tags (may need to be within body text)-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<!--Link to JavaScript file-->
   <script src="js/index.js"></script>
 </html>
